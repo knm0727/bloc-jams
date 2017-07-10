@@ -132,7 +132,7 @@ html {
  @media (min-width: 640px) {
        html { font-size: 112%; }
 
-       .colum {
+       .column {
          float: left;
          padding-left: 1rem;
          padding-right: 1rem;
