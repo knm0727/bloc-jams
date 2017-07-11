@@ -103,7 +103,7 @@ html {
 
  .selling-points {
      position: relative;
-     display: table;
+     display: block;
      width: 100%;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -111,9 +111,8 @@ html {
  }
 
  .point {
-     display: table-cell;
+     display: block;
      position: relative;
-     width: 33.3%;
      padding: 2rem;
      text-align: center;
  }
@@ -149,7 +148,7 @@ html {
          float: left;
          padding-left: 1rem;
          padding-right: 1rem;
- }
+     }
 
 
      .column.full { width: 100%; }
@@ -158,6 +157,15 @@ html {
      .column.third { width: 33.3%; }
      .column.fourth { width: 25%; }
      .column.flow-opposite { float: right; }
+
+     .selling-points {
+         display: table;
+     }
+
+     .point {
+         display: table-cell;
+         width: 33.3%;
+     }
 
    /* Style information will go here */
  }
