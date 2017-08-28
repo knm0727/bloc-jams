@@ -103,7 +103,7 @@ html {
 
  .selling-points {
      position: relative;
-     display: block;
+     display: bloc;
      width: 100%;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -111,8 +111,9 @@ html {
  }
 
  .point {
-     display: block;
+     display: table-cell;
      position: relative;
+     width: 33.3%;
      padding: 2rem;
      text-align: center;
  }
