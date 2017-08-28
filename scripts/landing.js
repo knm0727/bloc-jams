@@ -13,3 +13,6 @@ var animatePoints = function() {
      revealPoint(i);
    }
 };
+
+
+//hi
