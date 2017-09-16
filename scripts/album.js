@@ -47,12 +47,13 @@
  };
 
  var createSongRow = function(songNumber, songName, songLength) {
+   console.log("adding the song template");
      var template =
       '<tr class="album-view-song-item">'
-      '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
-      '  <td class="song-item-title">' + songName + '</td>'
-      '  <td class="song-item-duration">' + songLength + '</td>'
-      '</tr>'
+    +  '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
+    +  '  <td class="song-item-title">' + songName + '</td>'
+    +  '  <td class="song-item-duration">' + songLength + '</td>'
+    +  '</tr>'
      ;
 
      return template;
@@ -78,6 +79,7 @@ var setCurrentAlbum = function(album) {
 
     // #4
     for (var i = 0; i < album.songs.length; i++) {
+      console.log("create song row");
         albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
     }
 };
@@ -103,17 +105,17 @@ window.onload = function() {
           this.children[0].innerHTML = this.children[0].getAttribute('data-song-number');
         });
       }
+}
 
-//MAYBE }
 
 
-var ablums = [albumPicasso, albumMarconi, albumKmills];
-var index = 1;
-albumImage.addEventListener("click", function(event) {
-    setCurrentAlbum(albums[index]);
-    index++;
-    if (index == albums.length) {
-       index - 0;
-    }
-  });
-};
+// var ablums = [albumPicasso, albumMarconi, albumKmills];
+// var index = 1;
+// albumImage.addEventListener("click", function(event) {
+//     setCurrentAlbum(albums[index]);
+//     index++;
+//     if (index == albums.length) {
+//        index - 0;
+//     }
+//   });
+// };
