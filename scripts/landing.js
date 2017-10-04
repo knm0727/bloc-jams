@@ -1,5 +1,5 @@
   var animatePoints = function() {
-      var revealPoint - function() {
+      var revealPoint = function() {
    // #7
         $(this).css({
             opacity: 1,
