@@ -61,10 +61,11 @@
 
   // #1
 var setCurrentAlbum = function(album) {
-    var $albumArtist = $(.'album-view-artist');
-    var $albumReleaseInfo = $(.'album-view-release-info');
-    var $albumImage = $(.'album-cover-art');
-    var $albumSongList = $(.'album-view-song-list');
+    var $albumTitle = $('.album-view-title');
+    var $albumArtist = $('.album-view-artist');
+    var $albumReleaseInfo = $('.album-view-release-info');
+    var $albumImage = $('.album-cover-art');
+    var $albumSongList = $('.album-view-song-list');
 
 
 //var setCurrentAlbum = function(album) {
@@ -80,7 +81,7 @@ var setCurrentAlbum = function(album) {
     for (var i = 0; i < album.songs.length; i++) {
       //console.log("create song row");
       var $newRow = createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
-      $albumSongList.append($newRow);  
+      $albumSongList.append($newRow);
     }
 };
 var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
