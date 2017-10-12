@@ -80,7 +80,7 @@
 
  .player-bar .currently-playing .artist-song-mobile {
      display: none;
-
+}
 
 
  .seek-control {
@@ -131,7 +131,7 @@
                  transition: all 100ms ease-in-out;
      }
 
-     .seek-bar:hover .thumb {
+  .seek-bar:hover .thumb {
          width: 1.1rem;
          height: 1.1rem;
          margin-top: -0.5rem;
@@ -145,16 +145,16 @@
 
 
  .player-bar .volume .icon {
-        font-size: 1.1rem;
-        display: inline-block;
-        vertical-align: middle;
-    }
+         font-size: 1.1rem;
+         display: inline-block;
+         vertical-align: middle;
+     }
 
-  .player-bar .volume .seek-bar {
-      display: inline-block;
-      width: 5.75rem;
-      vertical-align: middle;
-  }
+ .player-bar .volume .seek-bar {
+         display: inline-block;
+         width: 5.75rem;
+         vertical-align: middle;
+     }
 
   @media (max-width: 640px) {
     .player-bar {
