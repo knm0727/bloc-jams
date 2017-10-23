@@ -110,6 +110,12 @@ var clickHandler = function() {
                 $(this).html(playButtonTemplate);
                 $('.main-controls .play-pause').html(playerBarPlayButton);
                 currentSoundFile.pause();
+
+/////////ASSIGNMENT 33/////
+            } else {
+              $(this).html(playButtonTemplate);
+              $('.main-controls .play-pause .setTotalTimePlayerBar').html(playerBarPlayButton);
+              currentSoundFile.play();
             }
         }
 };
@@ -262,6 +268,9 @@ var updateSeekBarWhileSongPlays = function() {
                var $seekBar = $('.seek-control .seek-bar');
 
                updateSeekPercentage($seekBar, seekBarFillRatio);
+
+            ///////ASSIGNMENT 33///////
+               setCurrentTimeInPlayerBar($currentTime);
            });
        }
    };
@@ -333,6 +342,23 @@ var updatePlayerBarSong = function() {
 
 
 
+//ASSIGNMENT 33//
+var setCurrentTimeInPlayerBar = function(currentTime) {
+    $('.current-time').text(currentTime.song)
+    };
+
+setTotalTimePlayerBar = function(totalTime) {
+    var $totalTime = $('.songLength');
+};
+
+
+
+/////ASSIGNMENT 33 NEED HELP//////
+var filterTimeCode = function (timeInSeconds) {
+  parseFloat()
+};
+
+
 
 //var setCurrentAlbum = function(album) {
      // #2
@@ -367,6 +393,7 @@ var playerBarPauseButton = '<span class="ion-pause"></span>';
 
  var $previousButton = $('.main-controls .previous');
  var $nextButton = $('.main-controls .next');
+
 
 
 
